@@ -15,9 +15,16 @@
     <div id="root"></div>
     <script type="text/babel">
       const rootElement = document.getElementById("root");
-      const fullname = (user) => user.firstName + " " + user.lastName;
-      const user = { firstName: "Gayathri", lastName: "Gollangi" };
-      const element = <h1 className="greeting">Hello {fullname(user)}!</h1>;
+      const element = (
+        <div>
+          <h1 class="greeting">Welcome to JSX nesting elements</h1>
+          <p>
+            Same as HTML elements JSX elements are also uses nesting elements in
+            JSX.
+          </p>
+        </div>
+      );
+
       ReactDOM.render(element, rootElement);
     </script>
   </body>
